@@ -1,6 +1,7 @@
+
 {
   "name": "hours",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "\"Giving 26 hours away to meet new startups.\"",
   "main": "app.js",
   "scripts": {
