@@ -264,37 +264,6 @@ body {
   background-color: #000;
   z-index: 1000; }
 
-section.banner {
-  line-height: 200px; }
-  section.banner .lines {
-    display: inline-block;
-    vertical-align: middle; }
-  section.banner img {
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -108px;
-    z-index: 100;
-    padding: 0px 8px;
-    background-color: white; }
-
-p {
-  font-family: "Vollkorn", "Georgia", serif;
-  font-size: 22px;
-  color: rgba(0, 0, 0, 0.37); }
-
-img {
-  -webkit-backface-visibility: hidden; }
-
-a, a:visited, a:active {
-  -moz-transition: color 0.15s;
-  -o-transition: color 0.15s;
-  -webkit-transition: color 0.15s;
-  transition: color 0.15s;
-  color: #00181f; }
-  a:hover, a:visited:hover, a:active:hover {
-    color: #004152; }
-
 section {
   padding: 0px 60px;
   text-align: center; }
@@ -312,6 +281,23 @@ h1 {
   font-weight: 400;
   letter-spacing: -1.75px;
   padding-bottom: 20px; }
+
+p {
+  font-family: "Vollkorn", "Georgia", serif;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.37); }
+
+img {
+  -webkit-backface-visibility: hidden; }
+
+a, a:visited, a:active {
+  -moz-transition: color 0.15s;
+  -o-transition: color 0.15s;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
+  color: #00181f; }
+  a:hover, a:visited:hover, a:active:hover {
+    color: #004152; }
 
 .lines, .section-header {
   width: 100%;
@@ -336,16 +322,19 @@ h1 {
 .section-about-detail {
   font-size: 18px; }
 
-.contact a {
-  -moz-transition: color 0.2s;
-  -o-transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-  font-size: 32px;
-  padding: 0px 8px;
-  color: #e6e4e6; }
-  .contact a:hover {
-    color: #cdc9ce; }
+section.banner {
+  line-height: 200px; }
+  section.banner .lines {
+    display: inline-block;
+    vertical-align: middle; }
+  section.banner img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -108px;
+    z-index: 100;
+    padding: 0px 8px;
+    background-color: white; }
 
 .hello img {
   background: black;
@@ -359,6 +348,17 @@ h1 {
   padding-bottom: 30px; }
 .hello .contact {
   padding: 30px 0px; }
+
+.contact a {
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-size: 32px;
+  padding: 0px 8px;
+  color: #e6e4e6; }
+  .contact a:hover {
+    color: #cdc9ce; }
 
 .item {
   padding-top: 80px; }
@@ -385,15 +385,13 @@ h1 {
   .item-detail p.accent {
     font-size: 13px; }
 
-.item-display {
-  padding-left: 20px; }
-
 .item-show {
   display: block;
   height: auto;
   padding-bottom: 65px; }
   .item-show img {
     display: block;
+    width: 100%;
     max-width: 100%; }
 
 .item-about {
@@ -403,24 +401,6 @@ h1 {
     line-height: 27px;
     letter-spacing: -0.15px;
     padding-bottom: 15px; }
-
-.item-display-image {
-  position: relative;
-  display: block;
-  height: auto;
-  max-height: 250px;
-  overflow: hidden;
-  background-color: black;
-  border: 1px solid #EEE; }
-  .item-display-image img {
-    -moz-transition: opacity 0.4s ease;
-    -o-transition: opacity 0.4s ease;
-    -webkit-transition: opacity 0.4s ease;
-    transition: opacity 0.4s ease;
-    display: block;
-    opacity: 0.9; }
-    .item-display-image img:hover {
-      opacity: 1.0; }
 
 section.projects .item, section.about .item {
   padding-top: 0px;
@@ -440,17 +420,14 @@ section.projects .item-detail, section.about .item-detail {
   section.projects .item-detail .description, section.about .item-detail .description {
     font-size: 17px; }
 
-section.about .item {
-  padding-top: 0px; }
 section.about img {
   display: block;
+  width: 100%;
   max-width: 100%; }
 section.about .contact {
   padding-top: 10px; }
 section.about .contact a:first-child {
   padding-left: 0px; }
-section.about .resume {
-  padding-top: 20px; }
 
 @media screen and (max-width: 1000px) {
   .collapse {
