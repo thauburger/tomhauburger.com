@@ -1,8 +1,4 @@
 .DS_Store
-.DS_Store/*
-
+.sass_cache
 node_modules
-node_modules/*
-
-.sass-cache
-.sass-cache/*
+watch.bash

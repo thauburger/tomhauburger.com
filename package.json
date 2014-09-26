@@ -1,8 +1,7 @@
-
 {
-  "name": "hours",
-  "version": "0.0.2",
-  "description": "\"Giving 26 hours away to meet new startups.\"",
+  "name": "tomhauburger.com",
+  "version": "1.0.0",
+  "description": "Personal site.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
