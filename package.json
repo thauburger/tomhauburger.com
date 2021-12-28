@@ -9,6 +9,7 @@
   "author": "Tom Hauburger <thauburger@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "~3.4.8"
+    "express": "^4.17.2",
+    "connect": "^3.7.0"
   }
 }
