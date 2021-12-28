@@ -5,13 +5,12 @@ var path = require('path');
 var staticdir = __dirname + '/public';
 console.log('Directory: ' + staticdir);
 
+app.get('/tjk', function(req, res, next) {
+  res.sendFile('tjk.html', {root: path.join(__dirname, 'public')});
+});
+
 app.get('/', function(req, res, next) {
-  console.log(req.subdomains);
-  var filename = 'index.html';
-  if (req.subdomains.length == 1 && req.subdomains[0].toLowerCase() == 'tjk') {
-    filename = 'tjk.html'
-  }
-  res.sendFile(filename, {root: path.join(__dirname, 'public')});
+  res.sendFile('index.html', {root: path.join(__dirname, 'public')});
 });
 
 app.use(express.static(staticdir));
